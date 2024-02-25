@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>صفحه زیبا با جعبه</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ecf7ec; /* رنگ سبز ملایم */
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .header {
+            background-color: #007bff;
+            color: #fff;
+            padding: 20px;
+            border-radius: 8px 8px 0 0;
+            margin-bottom: 20px;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        .main-content {
+            padding: 20px;
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .box {
+            background-color: #fff;
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 8px;
+            display: none;
+        }
+
+        .box.open {
+            display: block;
+        }
+
+        .footer {
+            padding: 20px;
+            background-color: #007bff;
+            color: #fff;
+            text-align: center;
+            border-radius: 0 0 8px 8px;
+        }
+
+        .footer p {
+            margin: 0;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>قرعه کشی آنلاین</h1>
+        </div>
+        <div class="main-content">
+            <input type="text" id="inputWord" placeholder="کلمه مورد نظر را وارد کنید">
+            <br><br>
+            <button onclick="openBox()">ضربه برای نتیجه</button>
+            <div class="box" id="myBox">
+                <h2 style="color: #007bff;">نتیجه</h2>
+                <p style="color: #333;">متن و اطلاعات بیشتری که ممکن است در جعبه قرار بگیرد...</p>
+            </div>
+            <br><br>
+            <!-- تصویر یا شکلک‌ها برای پر کردن جاهای خالی -->
+            <img src="(:" alt="آیا جزوه برندگان هستی؟؟">
+        </div>
+        <div class="footer">
+            <p style="color: #fff;">تمامی حقوق محفوظ است &copy; 2024</p>
+        </div>
+    </div>
+
+    <script>
+        function openBox() {
+            var inputWord = document.getElementById('inputWord').value;
+            var box = document.getElementById('myBox');
+
+            if (inputWord === 'max_1122') {
+                box.innerHTML = '<h2 style="color: #007bff;">شما برنده شدید</h2><p style="color: #333;">کد یوسیم: 402525724</p>';
+            } else {
+                box.innerHTML = '<h2 style="color: #007bff;">ورودی نامعتبر است</h2>';
+            }
+
+            box.classList.add('open');
+        }
+    </script>
+</body>
+</html>
+<div style="font-family: monospace;">
+  
+   <pre>
+     ______________$$$$$$$______$$$$$$$$$
+__________$$$$$$$$$$$$__$$$$$$$__$$$$
+_________$$$$$$$$$$$$$? ?$$$$$$$$$__$$$
+_________$$$$$$$$$$$$$$$$$$$$$$$$__$$$
+_________$$$$$$$$$$$$$$$$$$$$$$$$__$$$
+__________$$$$$$$$$$$$$$$$$$$$$$__$$$
+____________$$$$$$$$$$$$$$$$$$$$$$$
+_______________$$$$$$$$$$$$$$$$$
+_________________$$$$$$$$$$$$$
+____________________$$? ?$$
+______________________$$$
+
+   </pre>
+</div>
